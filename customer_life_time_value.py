@@ -27,10 +27,6 @@
 # 1. Data Preparation
 ##########################################
 
-import warnings
-
-warnings.simplefilter(action='ignore', category=FutureWarning)
-
 import pandas as pd
 
 pd.set_option('display.max_columns', None)
@@ -131,8 +127,3 @@ cltv_c['segment'] = pd.qcut(cltv_c['cltv'], 4, labels=['D', 'C', 'B', 'A'])
 cltv_c.groupby('segment').agg({'count', 'mean', 'sum'})
 
 cltv_c.to_csv('cltv_c.csv')
-
-
-
-
-
