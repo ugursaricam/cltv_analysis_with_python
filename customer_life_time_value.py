@@ -100,12 +100,10 @@ cltv_c['customer_value'] = average_order_value * purchase_frequency
 # 7. Customer Lifetime Value (CLTV = (customer_value / churn_rate) * profit_margin)
 ##################################################
 
-# customer_value = cltv_c['customer_value']
-# profit_margin = cltv_c['profit_margin']
-# CLTV = (customer_value / churn_rate)*profit_margin
-# cltv_c['cltv'] = CLTV
+customer_value = cltv_c['customer_value']
+profit_margin = cltv_c['profit_margin']
 
-cltv_c['cltv'] = (cltv_c['customer_value'] / churn_rate) * cltv_c['profit_margin']
+cltv_c['cltv'] = (customer_value / churn_rate) * profit_margin]
 
 cltv_c.sort_values(by='cltv', ascending=False).head()
 
