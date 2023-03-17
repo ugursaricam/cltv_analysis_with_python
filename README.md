@@ -16,11 +16,12 @@
 dataset: https://archive.ics.uci.edu/ml/datasets/Online+Retail+II
 
 Variables
-InvoiceNo     :Invoice number. The unique number of each transaction, namely the invoice. If it starts with C, it shows the canceled invoice
-StockCode     :Unique number for each product
-Description   :Product description
-Quantity      :It expresses how many of the products on the invoices have been sold.
-InvoiceDate   :Invoice date and time
-UnitPrice     :Product price (in GBP)
-CustomerID    :Unique customer number
-Country       :Country where the customer lives
+* **Invoice:** Invoice number. The unique number of each transaction, namely the invoice. If it starts with C, it shows the canceled invoice
+* **StockCode:** A 5-digit integral number uniquely assigned to each distinct product.
+* **Description:** Product description
+* **Quantity:** The quantities of each product (item) per transaction.
+* **InvoiceDate:** The day and time when a transaction was generated.
+* **UnitPrice:** Product price (in GBP)
+* **CustomerID:** Unique customer number
+* **Country:** The name of the country where a customer resides.
+
